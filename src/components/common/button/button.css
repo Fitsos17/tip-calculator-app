@@ -1,0 +1,26 @@
+.button {
+  font-size: 1.4rem;
+  height: 5vh;
+  border: 0;
+  border-radius: 5px;
+  color: var(--white);
+  background-color: var(--very-dark-cyan);
+}
+
+.button:hover {
+  transition: 0.5s;
+  cursor: pointer;
+  background-color: var(--strong-cyan);
+  color: var(--very-dark-cyan);
+}
+
+.reset {
+  background-color: var(--strong-cyan);
+  filter: brightness(0.6);
+  width: 100%;
+  color: var(--very-dark-cyan);
+}
+
+.reset:hover {
+  filter: brightness(1);
+}

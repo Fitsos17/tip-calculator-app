@@ -1,0 +1,59 @@
+.input-container {
+  width: 100%;
+  height: 40%;
+  position: relative;
+}
+
+.input {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  padding: 0 10px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  text-align: right;
+  background-color: var(--very-light-grayish-cyan);
+  color: var(--very-dark-cyan);
+}
+
+.input[type="number"]::-webkit-inner-spin-button,
+.input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input::placeholder {
+  text-align: right;
+  color: var(--grayish-cyan);
+}
+
+.custom {
+  height: 100%;
+}
+
+.custom::placeholder {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.input:hover,
+.input:focus,
+.custom:hover,
+.custom:focus {
+  border: 2px solid var(--strong-cyan);
+  cursor: pointer;
+  outline: none;
+}
+
+.icon {
+  position: absolute;
+  left: 0;
+  margin-left: 10px;
+  transform: translateY(100%);
+}
+
+@media screen and (max-width: 995px) {
+  .icon {
+    transform: translateY(40%);
+  }
+}

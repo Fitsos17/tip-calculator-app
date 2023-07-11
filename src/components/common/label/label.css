@@ -1,0 +1,11 @@
+.label {
+  pointer-events: none;
+  font-size: 1rem;
+  color: var(--dark-grayish-cyan);
+  display: block;
+  margin-bottom: 5px;
+}
+
+.disappear {
+  display: none;
+}

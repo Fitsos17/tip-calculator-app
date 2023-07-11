@@ -1,0 +1,6 @@
+const BILL_ID = "BILL";
+const NUMBER_OF_PEOPLE = "NUMBER_OF_PEOPLE";
+const TIP_VALUES = [5, 10, 15, 25, 50];
+const CUSTOM = "CUSTOM";
+
+export { BILL_ID, NUMBER_OF_PEOPLE, TIP_VALUES, CUSTOM };

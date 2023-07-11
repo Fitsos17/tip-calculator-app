@@ -1,0 +1,25 @@
+.outputs {
+  border-radius: 20px;
+  width: 50%;
+  height: 100%;
+  background-color: var(--very-dark-cyan);
+  padding: 50px 30px;
+}
+
+.output-boxes {
+  height: 90%;
+}
+
+@media screen and (max-width: 1000px) {
+  .outputs {
+    margin-top: 20px;
+    width: 100%;
+    height: 40%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .outputs {
+    height: 40%;
+  }
+}
