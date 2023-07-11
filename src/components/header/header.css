@@ -5,9 +5,3 @@
   align-items: center;
   height: 100%;
 }
-
-@media screen and (min-width: 400px) {
-  .logo {
-    justify-content: center;
-  }
-}

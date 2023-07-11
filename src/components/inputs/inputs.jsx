@@ -8,12 +8,12 @@ import { BILL_ID, NUMBER_OF_PEOPLE, TIP_VALUES, CUSTOM } from "../../constants";
 import { ReactComponent as DollarIcon } from "../../assets/icon-dollar.svg";
 import { ReactComponent as PersonIcon } from "../../assets/icon-person.svg";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 
 const Inputs = ({ setCompleteObject }) => {
   const [bill, setBill] = useState(0);
   const [tip, setTip] = useState(0);
-  const [numOfPeople, setNumOfPeople] = useState();
+  const [numOfPeople, setNumOfPeople] = useState(0);
   const [numOfPeopleAreZero, setNumOfPeopleAreZero] = useState(false);
 
   // Set states on blur input

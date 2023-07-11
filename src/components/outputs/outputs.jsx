@@ -16,13 +16,20 @@ const Outputs = ({ completeObject }) => {
     }
   }, [completeObject]);
 
+  // I refresh the page, because if we refresh, the state will be purged.
+  // By doing this, we do not have to create a state on "../tip-calculator/tip-calculator.jsx"
+  // and pass it on "Inputs" and this component
+  const setResetHandler = () => window.location.reload(true);
+
   return (
     <div className="outputs">
       <div className="output-boxes">
         <OutputBox span="Tip Amount" value={tipAmount.toFixed(2)} />
         <OutputBox span="Total" value={total.toFixed(2)} />
       </div>
-      <Button reset>RESET</Button>
+      <Button reset onClickHandler={setResetHandler}>
+        RESET
+      </Button>
     </div>
   );
 };
