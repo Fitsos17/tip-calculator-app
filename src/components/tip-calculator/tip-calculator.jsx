@@ -8,12 +8,12 @@ const TipCalculator = () => {
   const [completeObject, setCompleteObject] = useState({});
 
   return (
-    <div className="calculator">
+    <main className="calculator">
       <div className="wrapper">
         <Inputs setCompleteObject={setCompleteObject} />
         <Outputs completeObject={completeObject} />
       </div>
-    </div>
+    </main>
   );
 };
 
